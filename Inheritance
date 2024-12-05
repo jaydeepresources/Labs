@@ -1,0 +1,29 @@
+Hands On for Java
+
+Assignment: Implementing Inheritance and Polymorphism in Java
+
+Objective:
+This assignment aims to help you understand and implement the concepts of inheritance, method overriding, and polymorphism in Java through a practical scenario.
+
+1. Define a Base Class:
+   - Create a class called Employee with the following attributes and methods:
+     - Attributes: id ,name , salary
+     - Methods: toString(), calculateSalary()
+
+2. Define Derived Classes:
+   - Create two derived classes PermanentEmployee and ConsultantEmployee that inherit from Employee.
+     - The PermanentEmployee class should have additional attributes like basic, hra, da.
+     - The ConsultantEmployee class should have additional attributes like dailyRate and totalDays.
+
+3. Implement Method Overriding:
+   - Override the toString( ) and calculateSalary( ) methods in PermanentEmployee and ConsultantEmployee classes to provide specific implementations for each type of employee.
+
+4. Demonstrate Polymorphism:
+   - Create an array of Employee objects and populate it with instances of PermanentEmployee and ConsultantEmployee.
+   - Iterate through the array and call the toString( ) and calculateSalary ( ) methods for each object to demonstrate polymorphic behavior.
+
+5. Test the Classes:
+   - Write a main class called EmployeeRunner to test your class hierarchy.
+   - Create instances of PermanentEmployee and ConsultantEmployee, assign values to their attributes, and call their methods to ensure everything is functioning correctly.
+
+
