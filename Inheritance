@@ -1,29 +1,65 @@
-Hands On for Java
+Hands On Labs for Java
 
-Assignment: Implementing Inheritance and Polymorphism in Java
+Assignment Topic: Implementing Inheritance and Polymorphism in Java
 
 Objective:
-This assignment aims to help you understand and implement the concepts of inheritance, method overriding, and polymorphism in Java through a practical scenario.
+These assignments aim to help you understand and implement the concepts of inheritance, method overriding, and polymorphism in Java through a practical scenario.
 
-1. Define a Base Class:
-   - Create a class called Employee with the following attributes and methods:
-     - Attributes: id ,name , salary
-     - Methods: toString(), calculateSalary()
+Assignment 1
 
-2. Define Derived Classes:
-   - Create two derived classes PermanentEmployee and ConsultantEmployee that inherit from Employee.
-     - The PermanentEmployee class should have additional attributes like basic, hra, da.
-     - The ConsultantEmployee class should have additional attributes like dailyRate and totalDays.
+1.	Define a Base Class:
+a.	Create a class called Employee with the following attributes and methods:
+i.	Attributes: id ,name , salary
+ii.	Methods: toString(), calculateSalary()
+2.	Define Derived Classes:
+a.	Create two derived classes PermanentEmployee and ConsultantEmployee that inherit from Employee.
+b.	The PermanentEmployee class should have additional attributes like basic, hra, da.
+c.	The ConsultantEmployee class should have additional attributes like dailyRate and totalDays.
+3.	Implement Method Overriding:
+a.	Override the toString( ) and calculateSalary( ) methods in PermanentEmployee and ConsultantEmployee classes to provide specific implementations for each type of employee.
+4.	Demonstrate Polymorphism:
+a.	Create an array of Employee objects and populate it with instances of PermanentEmployee and ConsultantEmployee.
+b.	Iterate through the array and call the toString( ) and calculateSalary ( ) methods for each object to demonstrate polymorphic behavior.
+5.	Test the Classes:
+a.	Write a main class called EmployeeRunner to test your class hierarchy.
+b.	Create instances of PermanentEmployee and ConsultantEmployee, assign values to their attributes, and call their methods to ensure everything is functioning correctly.
 
-3. Implement Method Overriding:
-   - Override the toString( ) and calculateSalary( ) methods in PermanentEmployee and ConsultantEmployee classes to provide specific implementations for each type of employee.
+Assignment 2
 
-4. Demonstrate Polymorphism:
-   - Create an array of Employee objects and populate it with instances of PermanentEmployee and ConsultantEmployee.
-   - Iterate through the array and call the toString( ) and calculateSalary ( ) methods for each object to demonstrate polymorphic behavior.
+1.	Define an Abstract Base Class:
+a.	Create an abstract class called Shape with the following attributes and methods:
+i.	Attributes: color, area
+ii.	Abstract Methods: area( ), perimeter( )
+iii.	Non-Abstract Method: toString( )
+2.	Define Derived Classes:
+a.	Create the following derived classes that extend the Shape abstract class:
+i.	Square: Additional attributes: sideLength. Implement the area() and perimeter() methods.
+ii.	Circle: Additional attributes: radius. Implement the area() and perimeter() methods.
+iii.	Rectangle: Additional attributes: length, width. Implement the area() and perimeter() methods.
+3.	Implement Method Overriding:
+a.	Override the area() and perimeter() methods in Square, Circle, and Rectangle classes to provide specific implementations for each shape.
+4.	Demonstrate Polymorphism:
+a.	Create an array of Shape objects and populate it with instances of Square, Circle, and Rectangle.
+b.	Iterate through the array and call the area(), perimeter(), and toString() methods for each object to demonstrate polymorphic behavior.
+5.	Test the Classes:
+a.	Write a main class called ShapeDemo to test your class hierarchy.
+b.	Create instances of Square, Circle, and Rectangle, assign values to their attributes, and call their methods to ensure everything is functioning correctly.
 
-5. Test the Classes:
-   - Write a main class called EmployeeRunner to test your class hierarchy.
-   - Create instances of PermanentEmployee and ConsultantEmployee, assign values to their attributes, and call their methods to ensure everything is functioning correctly.
+Assignment 3
 
+1.	Define an Interface:
+a.	Create an interface called Payment with the following methods:
+b.	void makePayment(double amount);
+c.	void displayPaymentDetails();
+2.	Implement the Interface in Classes:
+a.	Create the following classes that implement the Payment interface:
+i.	CreditCardPayment: Additional attributes: cardNumber, expiryDate. Implement the makePayment(double amount) and displayPaymentDetails() methods.
+ii.	PayPalPayment: Additional attributes: email, transactionId. Implement the makePayment(double amount) and displayPaymentDetails() methods.
+iii.	BankTransferPayment: Additional attributes: accountNumber, bankName. Implement the makePayment(double amount) and displayPaymentDetails() methods.
+3.	Demonstrate Polymorphism:
+a.	Create an array of Payment objects and populate it with instances of CreditCardPayment, PayPalPayment, and BankTransferPayment.
+b.	Iterate through the array and call the makePayment(double amount) and displayPaymentDetails() methods for each object to demonstrate polymorphic behavior.
+4.	Test the Classes:
+a.	Write a main class called PaymentDemo to test your class hierarchy.
+b.	Create instances of CreditCardPayment, PayPalPayment, and BankTransferPayment, assign values to their attributes, and call their methods to ensure everything is functioning correctly.
 
